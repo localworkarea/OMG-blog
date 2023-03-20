@@ -1013,6 +1013,18 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
+    const shareData = {
+        title: "OMG article",
+        text: "",
+        url: "https://localworkarea.github.io/OMG-blog/article-one.html"
+    };
+    const btn = document.querySelector(".article-item__share-btn");
+    btn.addEventListener("click", (async () => {
+        try {
+            await navigator.share(shareData);
+            resultPara.textContent = "Shared successfully";
+        } catch (err) {}
+    }));
     window["FLS"] = true;
     isWebp();
     addTouchClass();
