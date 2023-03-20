@@ -1013,17 +1013,14 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
-    const shareData = {
-        title: "OMG article",
-        text: "",
-        url: "https://localworkarea.github.io/OMG-blog/article-one.html"
-    };
     const btn = document.querySelector(".article-item__share-btn");
-    btn.addEventListener("click", (async () => {
-        try {
-            await navigator.share(shareData);
-            resultPara.textContent = "Shared successfully";
-        } catch (err) {}
+    btn.addEventListener("click", (e => {
+        let shareData = {
+            title: e.target.getAttribute("title"),
+            text: e.target.getAttribute("description"),
+            url: e.target.getAttribute("url")
+        };
+        navigator.share(shareData);
     }));
     window["FLS"] = true;
     isWebp();
