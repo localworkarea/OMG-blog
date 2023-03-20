@@ -1014,7 +1014,7 @@
         }
     }
     const btn = document.querySelector(".article-item__share-btn");
-    btn.addEventListener("click", (e => {
+    if (null != btn) btn.addEventListener("click", (e => {
         let shareData = {
             title: e.target.getAttribute("title"),
             text: e.target.getAttribute("description"),
