@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230320174019">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230321232647">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -326,6 +326,38 @@
 			</div>
 		</div>
 	</div>
+	<div id="share-btn" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content share-btn">
+				<button data-close type="button" class="form-massage__close form-massage__close_black"></button>
+				<div class="share-btn__title">Поділитись</div>
+				<div class="share-btn__text">Поділитись посиланням:</div>
+				<div class="share-btn__social">
+					<button type="button" class="share-btn__social-body">
+						<img src="img/article-one/share/telegram.svg" class="share-btn__social-icon" alt="telegram">
+					</button>
+					<button type="button" class="share-btn__social-body">
+						<img src="img/article-one/share/facebook.svg" class="share-btn__social-icon" alt="facebook">
+					</button>
+					<button type="button" class="share-btn__social-body">
+						<img src="img/article-one/share/linkindin.svg" class="share-btn__social-icon" alt="linkedin">
+					</button>
+					<button type="button" class="share-btn__social-body">
+						<img src="img/article-one/share/mail-circle.svg" class="share-btn__social-icon social-circle-ic" alt="mail">
+						<picture><source srcset="img/article-one/share/mail-5.webp" type="image/webp"><img src="img/article-one/share/mail-5.png" class="social-mail-ic" alt="mail"></picture>
+					</button>
+				</div>
+				<div class="share-btn__text">Копіювати посилання:</div>
+				<div class="share-btn__copy copy-btn">
+					<img src="img/article-one/share/share.svg" alt="icon" class="copy-btn__icon">
+					<div class="copy-btn__text-link">
+						<input autocomplete="off" type="text" name="share" placeholder="" value="example.com/share-link/example-omg-article" class="input__share">
+					</div>
+					<button type="button" class="copy-btn__copy-link">Копіювати</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div id="form-brief" aria-hidden="true" class="popup">
@@ -367,7 +399,7 @@
 
 
 
-	<script src="js/app.min.js?_v=20230320174019"></script>
+	<script src="js/app.min.js?_v=20230321232647"></script>
 </body>
 
 </html>

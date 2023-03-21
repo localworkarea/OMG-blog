@@ -1013,15 +1013,6 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
-    const btn = document.querySelector(".article-item__share-btn");
-    if (null != btn) btn.addEventListener("click", (e => {
-        let shareData = {
-            title: e.target.getAttribute("title"),
-            text: e.target.getAttribute("description"),
-            url: e.target.getAttribute("url")
-        };
-        navigator.share(shareData);
-    }));
     window["FLS"] = true;
     isWebp();
     addTouchClass();
