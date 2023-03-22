@@ -2292,6 +2292,11 @@ body::after {
   background-color: #000;
 }
 
+.articles-section__btn {
+  max-width: 20.75rem;
+  margin: 0 auto;
+}
+
 .glossary {
   margin-top: 10.1875rem;
 }
@@ -2977,6 +2982,10 @@ body::after {
   }
 
   .articles-section__title:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .articles-section__content:not(:last-child) {
     margin-bottom: 2.5rem;
   }
 
@@ -3785,6 +3794,10 @@ body::after {
 
   .articles-section__title:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+
+  .articles-section__content:not(:last-child) {
+    margin-bottom: 1.875rem;
   }
 
   .main-form {
@@ -5620,6 +5633,18 @@ body::after {
 @supports not (margin-bottom: clamp( 1.25rem , 0.8928571429rem  +  1.7857142857vw , 2.5rem )) {
     .articles-section__title:not(:last-child) {
       margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 70);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.6964285714rem  +  0.8928571429vw , 2.5rem )) {
+    .articles-section__content:not(:last-child) {
+      margin-bottom: clamp( 1.875rem , 1.6964285714rem  +  0.8928571429vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.6964285714rem  +  0.8928571429vw , 2.5rem )) {
+    .articles-section__content:not(:last-child) {
+      margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 70);
     }
 }
 
