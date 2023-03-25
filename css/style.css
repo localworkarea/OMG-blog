@@ -3410,6 +3410,11 @@ body::after {
     width: 100%;
   }
 
+  .language-link__list {
+    top: 0;
+    bottom: unset;
+  }
+
   .menu__container {
     display: -webkit-box;
     display: -ms-flexbox;
